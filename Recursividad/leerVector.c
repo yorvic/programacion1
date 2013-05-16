@@ -19,7 +19,7 @@ void leerVector(vector v,int *n){
 		printf("\n v[%d]= ",i);
 		scanf("%d",&v[i]);
 	}
-	printf("\n");
+	printf("\n Mostrando el Vector para Comprobar los elementos ingresados");
 	for (i = 0; i <*n ; i++){
 		printf("v[%d]=%d   ",i,v[i]);
 	}
