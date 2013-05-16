@@ -1,3 +1,5 @@
+Teclado Linux--> sudo setxkbmap -layout 'es,es' -model pc105
+
 Una vez instalas GIT, debes configurarlo
 
 git config --global user.name "Christian" git config --global user.email "xxxxxx@xxxx.com"
