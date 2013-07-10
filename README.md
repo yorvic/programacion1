@@ -1,4 +1,3 @@
-programacion1
+Programacion1
 =============
-
-Programación I
+Repositorio que contiene ejercicios en lenguaje C 
