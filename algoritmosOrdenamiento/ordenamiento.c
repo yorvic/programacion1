@@ -25,6 +25,8 @@ void id2Cadena (int k,char cadena[]);
 int main(){
 	vaciarArchivo ();
 	leeOrdenaExporta();
+	printf("\n/*========================<Mensaje>========================*/\n");
+	printf("\tArreglo Ordenado en el archivo \"Orden.out\"\n\n");
 	return 0;
 }
 
@@ -77,6 +79,7 @@ void leeOrdenaExporta (){
 			}
 			fscanf(in,"%d",&k);
 			menuOrdenamiento(k,v,m);
+			mostrarVector (v,m,k);
 		}
 		fclose(in);
 	}
@@ -108,13 +111,12 @@ void ordenamientoBurbuja (int a[],int m){
 /*========================<Mostrar Vector>========================*/
 void mostrarVector (int v[],int m,int k){
 	int i;
+	char metodo[66]="\0";
 	printf("\n");
-	printf("m: %d",m);
-	printf("\n");
-	printf("k: %d",k);
-
+	id2Cadena(k,metodo);
+	printf("\n/*========================<Ordenado por \" %s \">========================*/\n",metodo);
 	for( i=0 ; i<m ; i++ ){
-		printf("v[%d]=%d ",i,v[i]);
+		printf("%d ",v[i]);
 	}
 	printf("\n");
 
